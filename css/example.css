@@ -1,0 +1,77 @@
+/**
+ * Demo page styles, all list scroll effects styles are in sctroll.css
+ */
+html, body {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background: #323232;
+	font-family: 'Roboto Slab', serif;
+	font-size: 16px;
+	color: #eee;
+	line-height: 1;
+	
+}
+
+#content {
+	margin-top: 2em;
+	width: 100%;
+}
+
+#wrapper {
+	margin: 0 auto;
+	width: 710px;
+}
+
+h1 {
+	
+}
+
+/**
+ * List used for the demo page
+ */
+ul.stroll {
+	position: relative;
+	width: 710px;
+	height: 465px;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	list-style: none;
+
+	-webkit-perspective: 284px;
+	   -moz-perspective: 284px;
+	    -ms-perspective: 284px;
+	     -o-perspective: 284px;
+	        perspective: 284px;
+}
+
+ul.stroll li {
+	position: relative;
+	background: #eee;
+	z-index: 2;
+
+	-webkit-transform: translateZ(0px);
+	   -moz-transform: translateZ(0px);
+	    -ms-transform: translateZ(0px);
+	     -o-transform: translateZ(0px);
+	        transform: translateZ(0px);
+}
+
+ul.nav {
+    list-style: none;
+	width: 100%;
+	padding: 0;
+	margin: 2em 0 0 0;
+}
+
+ul.nav li {
+	display: inline-block;
+	background-color: white;
+	color: gray;
+	padding: 10px;
+}
+
